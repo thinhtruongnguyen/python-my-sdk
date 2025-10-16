@@ -53,6 +53,8 @@ if __name__ == "__main__":
     try:        
         resp = client.api_key_service
         print(resp)
+        print(resp.status)
+        print(resp.data.free_balance)
 
     except ApiError as e:
         print(e)

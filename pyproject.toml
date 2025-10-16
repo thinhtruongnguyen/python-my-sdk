@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "my_platform_sdk_package"         # must be unique on PyPI
-version = "0.1.4"
+version = "0.1.5"
 description = "A simple my_platform_sdk_package"
 readme = "README.md"
 license = {text = "MIT"}
