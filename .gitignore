@@ -1,0 +1,115 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+wheelhouse/
+pip-log.txt
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+*.manifest
+*.spec
+
+# Installer logs
+install.log
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+cover/
+coverage.xml
+nosetests.xml
+pytestdebug.log
+
+# Virtualenvs
+venv/
+env/
+.venv/
+. env/           # harmless extra
+venv.bak/
+
+# Pyproject/build isolation envs
+.tmp_build_env/
+.venv-build/
+
+# Editors and OS
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Credentials and secrets
+.env
+.env.*.local
+.envrc
+*.pem
+*.key
+.pypirc
+
+# Logs and local runtime files
+logs/
+*.log
+*.local
+
+# Generated docs/specs (if you don't want to keep them in repo)
+# (Uncomment if specs are generated and should NOT be committed)
+# specs/
+# docs/_build/
+
+# Mac/Linux specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# JetBrains
+.idea/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# pytest
+.cache/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Ignore build artifacts from openapi-generator, swagger, etc.
+generated-*
+openapi-client/
+generated-go-client/
+generated-python-client/
+
+# VS Code history
+.history/
+
+# keep source code under src/ tracked (do not ignore)
+# src/
+
+
+scripts/
+specs/
+*.http
