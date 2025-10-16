@@ -43,10 +43,10 @@ class HttpClient:
             self.client.configuration.host = base_url
 
         self.api_key_service = ApiKeyService(self)
-        self.api_key_model_service = ApiKeyModelService(self.client)
-        self.api_key_model_verify_service = ApiKeyModelVerifyService(self.client)
-        self.api_key_model_versioning_service = ApiKeyModelVersioningService(self.client)
-        self.api_key_repository_service = ApiKeyRepositoryService(self.client)
+        self.api_key_model_service = ApiKeyModelService(self)
+        self.api_key_model_verify_service = ApiKeyModelVerifyService(self)
+        self.api_key_model_versioning_service = ApiKeyModelVersioningService(self)
+        self.api_key_repository_service = ApiKeyRepositoryService(self)
 
     def request(
         self,

@@ -6,12 +6,12 @@ if __name__ == "__main__":
     client = HttpClient(api_key=API_KEY)
 
     try:        
-        resp = client.api_key_service.get_task_histories(10,7)
+        resp = client.api_key_model_service.get_list_platforms_support()
         print(resp)
         print(resp.status)
 
     except ApiError as e:
         print(e)
-        print(e.status)
-        print(e.message)
+        # print(e.status)
+        # print(e.message)
 
