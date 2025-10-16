@@ -110,6 +110,6 @@ generated-python-client/
 # src/
 
 
-scripts/
+
 specs/
 *.http
