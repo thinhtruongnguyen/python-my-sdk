@@ -13,7 +13,7 @@ from config import API_KEY, BASE_URL, MODEL_ID,LIMIT, OFFSET, TASK_ID, FROM, TO
 )
 def test_get_task_histories(api_key_service, limit, offset, expect_success):
     try:
-        resp = api_key_service.get_task_histories(limit=limit, offset=offset)
+        resp = api_key_service.api_key_task_histories_get(limit=limit, offset=offset)
         if expect_success:
             assert resp.status == "success"
             assert resp.data is not None
@@ -24,7 +24,7 @@ def test_get_task_histories(api_key_service, limit, offset, expect_success):
 
 def test_get_balance(api_key_service):
     try:
-        resp = api_key_service.get_balance()
+        resp = api_key_service.api_key_balance_get()
         assert resp.status == "success"
         assert resp.data is not None
         assert hasattr(resp.data, "balance")
@@ -54,7 +54,7 @@ def test_create_task(api_key_service, model_id, expect_success):
 
     if expect_success:
         try:
-            resp = api_key_service.create_task(request)
+            resp = api_key_service.api_key_task_post(request)
             assert resp.status == "success"
             assert resp.data is not None
         except ApiError as e:
@@ -70,7 +70,7 @@ def test_create_task(api_key_service, model_id, expect_success):
 def test_get_task_result(api_key_service, task_id, expect_success):
     if expect_success:
         try:
-            resp = api_key_service.get_task_result(task_id=task_id)
+            resp = api_key_service.api_key_task_id_result_get(task_id=task_id)
             assert resp.status == "success"
             assert resp.data is not None
         except ApiError as e:

@@ -10,7 +10,7 @@ from config import OWNER, REPO, PATH, SHA, PAGE, PAGE_SIZE, REPO_TYPE
 )
 def test_get_commit_history(api_key_repository_service, owner, repo, expect_success):
     try:
-        resp = api_key_repository_service.get_commit_history(
+        resp = api_key_repository_service.api_key_repository_owner_username_repository_name_commit_history_get(
             owner_username=owner,
             repository_name=repo,
             path=PATH,

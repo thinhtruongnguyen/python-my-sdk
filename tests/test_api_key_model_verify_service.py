@@ -19,7 +19,7 @@ def test_calculate_cost_to_verify_model(api_key_model_verify_service, model_id, 
         platforms=platforms
     )
     try:
-        resp = api_key_model_verify_service.calculate_cost_to_verify_model(model_id, request_obj)
+        resp = api_key_model_verify_service.api_key_model_id_verify_cost_post(model_id, request_obj)
         if expect_success:
             assert resp.status == "success"
             assert resp.data is not None
@@ -45,7 +45,7 @@ def test_verify_model(api_key_model_verify_service, model_id, commit_hash, platf
         platforms=platforms
     )
     try:
-        resp= api_key_model_verify_service.verify_model(model_id, request_obj)
+        resp= api_key_model_verify_service.api_key_model_id_verify_post(model_id, request_obj)
         if expect_success:
             assert resp.status == "success"
             assert resp.data is not None
@@ -68,7 +68,7 @@ def test_pre_check_to_verify_model(api_key_model_verify_service, model_id, commi
         platforms=platforms
     )
     try:
-        resp = api_key_model_verify_service.pre_check_to_verify_model(model_id, request_obj)
+        resp = api_key_model_verify_service.api_key_model_id_pre_verify_post(model_id, request_obj)
         if expect_success:
             assert resp.status == "success"
             assert resp.data is not None
@@ -83,7 +83,7 @@ def test_pre_check_to_verify_model(api_key_model_verify_service, model_id, commi
 @pytest.mark.parametrize("task_id, expect_success", [(TASK_ID, False)])
 def test_get_verify_platform_task_by_id(api_key_model_verify_service, task_id, expect_success):
     try:
-        resp = api_key_model_verify_service.get_verify_platform_task_by_id(task_id)
+        resp = api_key_model_verify_service.api_key_model_verify_platform_task_id_get(task_id)
         if expect_success:
             assert resp.status == "success"
             assert resp.data is not None
@@ -95,7 +95,7 @@ def test_get_verify_platform_task_by_id(api_key_model_verify_service, task_id, e
 @pytest.mark.parametrize("task_id, expect_success", [(TASK_ID, False)])
 def test_get_model_versioning_by_task_id(api_key_model_verify_service, task_id, expect_success):
     try:
-        resp = api_key_model_verify_service.get_model_versioning_by_task_id(task_id)
+        resp = api_key_model_verify_service.api_key_model_verify_hub_task_id_get(task_id)
         if expect_success:
             assert resp.status == "success"
             assert resp.data is not None

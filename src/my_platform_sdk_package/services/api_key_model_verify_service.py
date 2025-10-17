@@ -12,36 +12,36 @@ class ApiKeyModelVerifyService:
     def __init__(self, api):
         self.api = api
 
-    def calculate_cost_to_verify_model(self, model_id: str, request: RequestCalculateCostToVerifyAiModelRequest)->ResponseEstimateCostResponse:
+    def api_key_model_id_verify_cost_post(self, model_id: str, request: RequestCalculateCostToVerifyAiModelRequest)->ResponseEstimateCostResponse:
         path = f"api-key/model/{model_id}/verify/cost"
         resp = self.api.request("POST", path, body=request.to_dict(),response_model=ResponseEstimateCostResponse)
         return resp
 
-    def verify_model(self, model_id: str, request: RequestVerifyAiModelRequest)->ResponseVerifyAiModelResponse:
+    def api_key_model_id_verify_post(self, model_id: str, request: RequestVerifyAiModelRequest)->ResponseVerifyAiModelResponse:
         path = f"api-key/model/{model_id}/verify"
         resp = self.api.request("POST", path, body=request.to_dict(),response_model=ResponseVerifyAiModelResponse)
         return resp
 
 
-    def pre_check_to_verify_model(self, model_id: str, request: RequestCheckValidToVerifyAiModelRequest)->ResponseCheckValidToVerifyAiModelResponse:
+    def api_key_model_id_pre_verify_post(self, model_id: str, request: RequestCheckValidToVerifyAiModelRequest)->ResponseCheckValidToVerifyAiModelResponse:
         path = f"api-key/model/{model_id}/pre-verify"
         resp = self.api.request("POST", path, body=request.to_dict(),response_model=ResponseCheckValidToVerifyAiModelResponse)
         return resp
 
 
 
-    def get_list_verify_model_task_by_commit_hash_and_status(self, model_id: str, commit_hash: str, status: str)->ResponseModelVersioningGroupLiteListResponse:
+    def api_key_model_id_verify_task_get(self, model_id: str, commit_hash: str, status: str)->ResponseModelVersioningGroupLiteListResponse:
         path = f"api-key/model/{model_id}/verify/task"
         params = {"commitHash": commit_hash, "verifyStatus": status}
         resp = self.api.request("GET", path, query_params=params,response_model=ResponseModelVersioningGroupLiteListResponse)
         return resp
 
-    def get_verify_platform_task_by_id(self, task_id: str)->ResponseQueueTaskResponse:
+    def api_key_model_verify_platform_task_id_get(self, task_id: str)->ResponseQueueTaskResponse:
         path = f"api-key/model/verify/platform/task/{task_id}"
         resp = self.api.request("GET", path,response_model=ResponseQueueTaskResponse)
         return resp
 
-    def get_model_versioning_by_task_id(self, task_id: str)->ResponseModelVersioningResponse:
+    def api_key_model_verify_hub_task_id_get(self, task_id: str)->ResponseModelVersioningResponse:
         path = f"api-key/model/verify/hub/task/{task_id}"
         resp = self.api.request("GET", path,response_model=ResponseModelVersioningResponse)
         return resp

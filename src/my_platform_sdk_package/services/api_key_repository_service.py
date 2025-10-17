@@ -5,7 +5,7 @@ class ApiKeyRepositoryService:
     def __init__(self, api):
         self.api = api
 
-    def get_commit_history(
+    def api_key_repository_owner_username_repository_name_commit_history_get(
         self,
         owner_username: str,
         repository_name: str,

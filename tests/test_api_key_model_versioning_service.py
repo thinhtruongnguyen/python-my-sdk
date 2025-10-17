@@ -9,7 +9,7 @@ from config import  BASE_URL, MODEL_ID,LIMIT, OFFSET, TASK_ID, FROM, TO, COMMIT_
 ])
 def test_get_list_verified_model_versioning(api_key_model_versioning_service, model_id, offset, limit, verify_status, expect_success):
     try:
-        resp = api_key_model_versioning_service.get_list_verified_model_versioning(
+        resp = api_key_model_versioning_service.api_key_model_id_versioning_list_get(
             model_id, offset, limit, verify_status
         )
         if expect_success:
@@ -30,7 +30,7 @@ def test_get_list_verified_model_versioning(api_key_model_versioning_service, mo
 ])
 def test_change_current_model_versioning(api_key_model_versioning_service, model_id, commit_hash, expect_success):
     try:
-        resp = api_key_model_versioning_service.change_current_model_versioning_by_model_id_and_commit_hash(
+        resp = api_key_model_versioning_service.api_key_model_id_versioning_put(
             model_id, commit_hash
         )
         if expect_success:

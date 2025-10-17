@@ -9,29 +9,29 @@ class ApiKeyModelService:
     def __init__(self, api):
         self.api = api
 
-    def get_model_statistics(self, model_id: str, request: RequestGetApiKeyStatisticsByModelIdRequest)->ResponseGetTaskStatisticsResponse:
+    def api_key_model_id_statistics_post(self, model_id: str, request: RequestGetApiKeyStatisticsByModelIdRequest)->ResponseGetTaskStatisticsResponse:
         path = f"api-key/model/{model_id}/statistics"
         resp = self.api.request("POST", path, body=request.to_dict(),response_model=ResponseGetTaskStatisticsResponse)
         return resp
 
     
-    def get_model_task_cost(self, model_id: str)->ResponseEstimateCostResponse:
+    def api_key_model_id_task_cost_get(self, model_id: str)->ResponseEstimateCostResponse:
         path = f"api-key/model/{model_id}/task/cost"
         resp = self.api.request("GET", path,response_model=ResponseEstimateCostResponse)
         return resp
 
-    def check_model_is_serving(self, model_id: str)->ResponseCheckModelIsServingResponse:
+    def api_key_model_id_serving_get(self, model_id: str)->ResponseCheckModelIsServingResponse:
         path = f"api-key/model/{model_id}/serving"
         resp = self.api.request("GET", path,response_model=ResponseCheckModelIsServingResponse)
         return resp
     
 
-    def get_model_info(self, model_id: str)->ResponseApiKeyInfoResponse:
+    def api_key_model_id_info_get(self, model_id: str)->ResponseApiKeyInfoResponse:
         path = f"api-key/model/{model_id}/info"
         resp = self.api.request("GET", path,response_model=ResponseApiKeyInfoResponse)
         return resp
 
-    def get_list_platforms_support(self)->ResponseGetListPlatformSupportResponse:
+    def api_key_model_verify_support_platforms_get(self)->ResponseGetListPlatformSupportResponse:
         path = "api-key/model/verify/support/platforms"
         resp = self.api.request("GET", path,response_model=ResponseGetListPlatformSupportResponse)
         return resp
