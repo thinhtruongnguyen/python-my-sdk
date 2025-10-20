@@ -22,10 +22,6 @@ Get Api Key Balance
 
 [**ResponseWalletWithAddressResponse**](ResponseWalletWithAddressResponse.md)
 
-### Authorization
-
-No authorization required
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -51,9 +47,6 @@ Get Api Key Permission
 
 [**ResponseGetApiKeyPermissionResponse**](ResponseGetApiKeyPermissionResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -87,9 +80,6 @@ Name | Type | Description  | Notes
 
 [**ResponseGetTaskStatisticsResponse**](ResponseGetTaskStatisticsResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -123,9 +113,6 @@ Name | Type | Description  | Notes
 
 [**ResponseApiKeyHistoryListResponse**](ResponseApiKeyHistoryListResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -163,10 +150,6 @@ Name | Type | Description  | Notes
 
 [**ResponseSuccessResponse**](ResponseSuccessResponse.md)
 
-### Authorization
-
-No authorization required
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -200,9 +183,6 @@ Name | Type | Description  | Notes
 
 [**ResponseGetTaskResultResponse**](ResponseGetTaskResultResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -237,9 +217,6 @@ Name | Type | Description  | Notes
 
 [**ResponseDistributeTaskResponse**](ResponseDistributeTaskResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

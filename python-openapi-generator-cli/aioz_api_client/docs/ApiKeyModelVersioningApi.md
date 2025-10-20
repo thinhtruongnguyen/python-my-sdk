@@ -29,9 +29,6 @@ Name | Type | Description  | Notes
 
 [**ResponseSuccessResponse**](ResponseSuccessResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -68,9 +65,6 @@ Name | Type | Description  | Notes
 
 [**ResponseModelVersioningGroupLiteResponse**](ResponseModelVersioningGroupLiteResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -110,9 +104,7 @@ Name | Type | Description  | Notes
 
 [**ResponseGetListModelVersioningLiteResponse**](ResponseGetListModelVersioningLiteResponse.md)
 
-### Authorization
 
-No authorization required
 
 ### HTTP request headers
 
@@ -151,9 +143,6 @@ Name | Type | Description  | Notes
 
 [**ResponseSuccessResponse**](ResponseSuccessResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

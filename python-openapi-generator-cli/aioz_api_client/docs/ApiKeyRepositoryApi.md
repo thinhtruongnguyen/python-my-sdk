@@ -32,9 +32,6 @@ Name | Type | Description  | Notes
 
 [**ResponseGetCommitHistoryResponse**](ResponseGetCommitHistoryResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

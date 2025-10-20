@@ -33,9 +33,6 @@ Name | Type | Description  | Notes
 
 [**ResponseCheckValidToVerifyAiModelResponse**](ResponseCheckValidToVerifyAiModelResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -73,9 +70,7 @@ Name | Type | Description  | Notes
 
 [**ResponseEstimateCostResponse**](ResponseEstimateCostResponse.md)
 
-### Authorization
 
-No authorization required
 
 ### HTTP request headers
 
@@ -115,9 +110,6 @@ Name | Type | Description  | Notes
 
 [**ResponseVerifyAiModelResponse**](ResponseVerifyAiModelResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -157,9 +149,6 @@ Name | Type | Description  | Notes
 
 [**ResponseModelVersioningGroupLiteListResponse**](ResponseModelVersioningGroupLiteListResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -196,9 +185,7 @@ Name | Type | Description  | Notes
 
 [**ResponseModelVersioningResponse**](ResponseModelVersioningResponse.md)
 
-### Authorization
 
-No authorization required
 
 ### HTTP request headers
 
@@ -230,9 +217,7 @@ Name | Type | Description  | Notes
 
 [**ResponseQueueTaskResponse**](ResponseQueueTaskResponse.md)
 
-### Authorization
 
-No authorization required
 
 ### HTTP request headers
 

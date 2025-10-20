@@ -29,9 +29,6 @@ Name | Type | Description  | Notes
 
 [**ResponseApiKeyInfoResponse**](ResponseApiKeyInfoResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -68,10 +65,6 @@ Name | Type | Description  | Notes
 
 [**ResponseCheckModelIsServingResponse**](ResponseCheckModelIsServingResponse.md)
 
-### Authorization
-
-No authorization required
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -107,9 +100,6 @@ Name | Type | Description  | Notes
 
 [**ResponseGetTaskStatisticsResponse**](ResponseGetTaskStatisticsResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -146,9 +136,6 @@ Name | Type | Description  | Notes
 
 [**ResponseEstimateCostResponse**](ResponseEstimateCostResponse.md)
 
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -177,9 +164,7 @@ Get List Platforms Support By Api Key
 
 [**ResponseGetListPlatformSupportResponse**](ResponseGetListPlatformSupportResponse.md)
 
-### Authorization
 
-No authorization required
 
 ### HTTP request headers
 
